@@ -717,6 +717,13 @@ audio:not([controls]) {
 [hidden],template {
     display:none
 }
+// 鼠标样式
+  * {
+      cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/normal.cur"),auto!important
+  }
+  :active {
+      cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/No_Disponible.cur"),auto!important
+  }
 a {
     background-color:transparent;
     text-decoration:none;
