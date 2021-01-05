@@ -1,0 +1,269 @@
+---
+title: IDEA中从零开始创建Vue项目
+tag: VUE
+categories: 技术
+comment: true
+description: 开始学习VUE的不二之选~
+photos: https://tse4-mm.cn.bing.net/th/id/OIP.Atex16Gx1AOUIctsj8MHJwHaFj?pid=Api&rs=1
+---
+# IDEA中从零开始创建Vue项目
+
+好久没学技术了，今天开始学习Vue,我用的是IDEA，所以第一步就是如何在IDEA中创建Vue项目。在此期间，也是遇到了不少的坑，好在找到了许多优质的文章，所以在这里整理、记录，并分享给大家。
+
+
+
+## 一、需要了解的基本知识
+
+------
+
+- ### node.js
+
+> Node.js是一个Javascript运行环境(runtime)，发布于2009年5月，由Ryan Dahl开发，实质是对Chrome V8引擎进行了封装。Node.js对一些特殊用例进行优化，提供替代的API，使得V8在非浏览器环境下运行得更好。V8引擎执行Javascript的速度非常快，性能非常好。 Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。总结一下，node,js提供了javascript在浏览器以外的一个执行环境，满足一些特定的场景需求。
+
+- ### npm
+
+> npm 是 nodejs 的包管理和分发工具。它可以让 javascript 开发者能够更加轻松的共享代码和共用代码片段，并且通过 npm 管理你分享的代码也很方便快捷和简单。通过npm可以更方便的引用和分析基于nodejs开发的类库和插件。
+
+- ### webpack
+
+> WebPack可以看做是模块打包机：它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript等），并将其打包为合适的格式以供浏览器使用。通过webpack可以把基于模块开发的前端工程代码打包成可以在浏览器使用的格式。
+
+- ### vue2
+
+> 是一套构建用户界面的渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与单文件系统和vue生态系统支持的库结合使用时，Vue 也完全能够为复杂的单页应用程序提供驱动。在开发中vue会把使用vue语法修饰的html标签与js对象进行绑定，从而使html值变化时可以同步修改js对象，js对象值变化时可以在页面暂时，使开发从复杂的document操作中解脱出来。
+
+- ### iview
+
+> 一套基于 Vue.js 的高质量 UI 组件库，通过iveiw可以快速的开发出风格一致的前端界面。
+
+------
+
+## 二、node.js安装
+
+- ### 下载地址：https://nodejs.org/en/download/。
+
+> 下载完成后安装（直接按默认方式安装就行）
+
+> 打开cmd 输入下面的命令查看是否成功安装
+>  `node -v`
+>  `npm -v`
+
+![img](https://upload-images.jianshu.io/upload_images/11582167-f81a20f73d8d41cf.png?imageMogr2/auto-orient/strip|imageView2/2/w/255)
+
+
+
+## 三、搭建项目
+
+### 1  .打开idea,新建项目
+
+ **Create New Project > Static Web>填写project name和选择保存的工作空间>Finish**
+
+![img](https://upload-images.jianshu.io/upload_images/11582167-286b7f799a1c41af.png?imageMogr2/auto-orient/strip|imageView2/2/w/884)
+
+
+
+![img](https://upload-images.jianshu.io/upload_images/11582167-2afa051ef6a82b5a.png?imageMogr2/auto-orient/strip|imageView2/2/w/884)
+
+​                                      
+
+### 2.安装vue脚手架工具
+
+- 首先安装npm的淘宝镜像(下载速度比较快)，打开idea的Terminal
+
+  ![img](https://upload-images.jianshu.io/upload_images/11582167-0dfcff2e76796d0f.png?imageMogr2/auto-orient/strip|imageView2/2/w/478)
+
+  输入以下的命令
+
+> ```
+> npm i -g cnpm --registry=https://registry.npm.taobao.org
+> ```
+
+
+
+#### 踩坑
+
+tips. (这是我添加的自己遇到的情况)
+
+**我们在使用npm安装依赖的时候有时候会出现“'npm' 不是内部或外部命令，也不是可运行的程序”的提示，一般都是因为环境变量没配好**
+
+在安装nodejs时候，有时候我们会把它安装在D盘或别的盘时，经常会遇到npm环境变量没有配好，需要自己手动去配置。
+
+解决方法：
+
+**发现问题后，我们在环境变量中添加我们安装的npm命令行执行文件路径** 
+
+**我的是安装在D:\Program Files\nodejs下（如下图）**
+
+![img](https://img-blog.csdn.net/20180118131654313?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjk3MTI5OTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+ 
+
+**则添加此路径的环境变量，按下图步骤**
+
+![img](https://img-blog.csdn.net/20180118131916846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjk3MTI5OTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+
+
+配置完环境变量后，在doc窗口中使用npm安装依赖可以执行。
+
+但是！！！
+
+在idea中terminal使用npm**报 'npm'不是内部或外部命令，也不是可运行的程序 或批处理文件**。 
+
+
+
+我又找到了以下解决方案：
+
+[解决方案来源](https://www.cnblogs.com/yuanchaoyong/p/12612402.html)
+
+将shell path地址换成如下。C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe，重启idea。再试试。
+
+
+
+![img](https://img2020.cnblogs.com/blog/897885/202004/897885-20200401142529875-1376129187.png)
+
+按照这个方法，再可以在terminal中执行npm命令了！
+
+
+
+我们继续执行这个：
+
+```
+npm i -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+
+
+- 等待下载完成以后，继续安装vue的脚手架工具，在Terminal内继续输入以下命令
+
+> ```
+> npm i -g vue-cli`
+>  测试是否安装成功：
+>  `vue -V
+> ```
+
+#### 踩坑2
+
+[解决方案来源](https://blog.csdn.net/qq_32068809/article/details/79512709)
+
+我们需要使用npm安装vue，在执行了上面的命令时，报错如下：
+
+
+
+```python
+C:\Users\lxz>npm uninstall vueWcsp
+
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Users\lxz\package.json'
+
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Users\lxz\package.json'
+
+npm WARN lxz No description
+
+npm WARN lxz No repository field.
+
+npm WARN lxz No README data
+
+npm WARN lxz No license field.
+
+up to date in 0.765s
+```
+
+
+
+根据错误提示，是系统没有‘package.json’这个文件导致。这个文件的作用就是管理你本地安装的npm包，一个package.json文件可以做如下事情：
+
+
+
+> 展示项目所依赖的npm包 
+> 允许你指定一个包的版本[范围] 
+> 让你建立起稳定，意味着你可以更好的与其他开发者共享
+
+此刻我们需要执行命令：
+
+```html
+npm init
+```
+
+
+
+创建package.json文件，系统会提示相关配置，也可以使用命令：
+
+
+
+```html
+npm init -y
+```
+
+
+
+直接创建package.json文件，这样创建好处是必填项已经帮你填好，执行完命令后可以看到用户路径下多了一个package.json文件。
+
+
+
+踩完坑，我们继续！！！
+
+
+
+- 脚手架安装完成后，初始化包结构,继续输入
+
+> ```
+> vue init webpack demo
+> ```
+
+- demo为你前面新建的项目名。初始化会进行设置。可参考此处设置。
+
+![img](https://upload-images.jianshu.io/upload_images/11582167-40136051e9fe8657.png?imageMogr2/auto-orient/strip|imageView2/2/w/903)
+
+#### ps1.
+
+在使用 **vue-cli** 脚手架构建项目时，会遇到一个构建选项 **Vue build**，有两个选项，**Runtime + Compiler**和**Runtime-only：**
+
+关于这两种的选择可参考：[优质文章](https://blog.csdn.net/qq_40938301/article/details/104357910)
+
+**· Runtime + Compiler: recommended for most users**
+
+（运行程序+编译器:推荐给大多数用户）
+
+**· Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specificHTML) are ONLY allowed in .vue files - render functions are required elsewhere**
+
+（仅运行程序: 比上面那种模式轻大约 6KB min+gzip，但是 template (或任何特定于vue的html)只允许在.vue文件中使用——其他地方用需要 render 函数）
+
+#### ps2.
+
+![Image 1](Image 1.png)
+
+对于这样有选项的，可以用 下 方向键选择，选中后回车即可！（不要像我傻傻 的不知所措）
+
+
+
+继续！！！
+
+- 初始化完成后。依次在Terminal输入图片内的黄色文字
+
+- demo为你前面新建的项目名；第二句括号中的不用输，我就是傻傻的输入了。。
+
+  ![img](https://upload-images.jianshu.io/upload_images/11582167-a002ea0d4adaa74f.png?imageMogr2/auto-orient/strip|imageView2/2/w/786)
+
+- 完成后，会提示在哪个端口可以访问，此处现在是8080
+
+  ![img](https://upload-images.jianshu.io/upload_images/11582167-b5b8d73f5bbd5edd.png?imageMogr2/auto-orient/strip|imageView2/2/w/646)
+
+- 打开浏览器输入：localhost:8080,出现以下画面，简单的demo就搭建完成了 。
+
+  ![img](https://upload-images.jianshu.io/upload_images/11582167-0b744acd68c8beb1.png?imageMogr2/auto-orient/strip|imageView2/2/w/1132)
+
+![Image 2](Image 2.png)
+
+此时，我们就可以新建Vue Component了！
+
+创建成功！回去继续上狂神的Vue去了...
+
+
+
+本文的主要步骤参考自：
+
+作者：不爱编程的程序员
+链接：https://www.jianshu.com/p/9c1d4f8ed068
+来源：简书
+
+期间加入了个人所遇到的一些问题及对应的解决方案，希望能给大家带来帮助！
