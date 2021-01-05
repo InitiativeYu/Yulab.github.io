@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Hexo</title>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <title itemprop="name">InitiativeYu</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -646,7 +648,6 @@ $(document).ready(function() {
   </section>
   <div id="mo-nav" class="">
   <div class="m-avatar">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
     <img src="https://tse4-mm.cn.bing.net/th/id/OIP.a5ZIdWQEMi9DXG5ny0ZjpwHaIX?w=163&h=191&c=7&o=5&dpr=1.1&pid=1.7">
   </div>
   <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">InitiativeYu</p>
@@ -907,5 +908,14 @@ $(document).ready(function() {
 
 
 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'UvAo8zWpSI8hmiTPeVBJXYjo-gzGzoHsz',
+            appKey: 'kbNGcLsJMdI0NJidLe96Yb9w'
+        })
+    </script>
 </body>
 </html>
