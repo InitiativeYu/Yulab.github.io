@@ -48,7 +48,7 @@
   /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(0).jpg.webp,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(1).jpg.webp,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(2).jpg.webp,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(3).jpg.webp,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(4).jpg.webp,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(5).jpg.webp".split(",");
+  var bg = "https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(0).jpg,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(1).jpg,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(2).jpg,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(3).jpg,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(4).jpg,https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(5).jpg".split(",");
   var bgindex = Math.floor(Math.random()*bg.length);
   if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
     alert('朋友，IE浏览器未适配哦~');
@@ -222,20 +222,6 @@
                       </li>
                     
                       <li>
-                        <a href="/categories/%E8%B5%84%E6%BA%90/">
-                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                          资源
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/categories/%E9%9A%8F%E6%83%B3/">
-                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                          随想
-                        </a>
-                      </li>
-                    
-                      <li>
                         <a href="/categories/%E8%BD%AC%E8%BD%BD/">
                           <i class="fa fa-book" aria-hidden="true"></i>
                           转载
@@ -274,13 +260,6 @@
                         <a href="/music/">
                           <i class="fa fa-headphones" aria-hidden="true"></i>
                           歌单
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/tags/%E5%9B%BE%E9%9B%86/">
-                          <i class="fa fa-photo" aria-hidden="true"></i>
-                          图集
                         </a>
                       </li>
                     
@@ -489,7 +468,7 @@
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -501,10 +480,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            // PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -813,20 +792,6 @@ $(document).ready(function() {
               </li>
             
               <li>
-                <a href="/categories/%E8%B5%84%E6%BA%90/">
-                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                  资源
-                </a>
-              </li>
-            
-              <li>
-                <a href="/categories/%E9%9A%8F%E6%83%B3/">
-                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                  随想
-                </a>
-              </li>
-            
-              <li>
                 <a href="/categories/%E8%BD%AC%E8%BD%BD/">
                   <i class="fa fa-book" aria-hidden="true"></i>
                   转载
@@ -865,13 +830,6 @@ $(document).ready(function() {
                 <a href="/music/">
                   <i class="fa fa-headphones" aria-hidden="true"></i>
                   歌单
-                </a>
-              </li>
-            
-              <li>
-                <a href="/tags/%E5%9B%BE%E9%9B%86/">
-                  <i class="fa fa-photo" aria-hidden="true"></i>
-                  图集
                 </a>
               </li>
             
