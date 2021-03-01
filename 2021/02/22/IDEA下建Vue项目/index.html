@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">hello | INITIATIVEYU</title>
+  <title itemprop="name">IDEA下建VUE项目 | INITIATIVEYU</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -384,44 +384,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
 
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/InitiativeYu/cdn/img/(4).jpg.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/InitiativeYu/cdn/img/(4).jpg.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      IDEA下建VUE项目</h1>
+      <p class="entry-census">
+        <span>
+          <a target="_blank" rel="noopener" href="https://github.com/InitiativeYu/InitiativeYu.github.io">
+            <img src="https://cdn.jsdelivr.net/gh/InitiativeYu/cdn/img/(1).jpg.webp">
+          </a>
+        </span>
+        <span>
+          <a target="_blank" rel="noopener" href="https://github.com/InitiativeYu/InitiativeYu.github.io">InitiativeYu</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-2-22<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
         <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-          <header class="entry-header">
-            <h1 class="entry-title">hello</h1>
-            <p class="entry-census">&nbsp;·&nbsp;2021-2-22&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
-            <hr>
-		  <!-- 开始添加字数统计-->
-	      
-	        	<div style="margin-top:10px;">
-	    <span class="post-time">
-	      <span class="post-meta-item-icon">
-	        <i class="fa fa-keyboard-o"></i>
-	        <span class="post-meta-item-text">  字数统计: </span>
-	        <!-- 安装插件npm install hexo-wordcount --save -->
-	        <span class="post-count">1.9k字</span>
-	      </span>
-	    </span>
-	
-	    <span class="post-time">
-	      &nbsp; | &nbsp;
-	      <span class="post-meta-item-icon">
-	        <i class="fa fa-hourglass-half"></i>
-	        <span class="post-meta-item-text">  阅读时长: </span>
-	        <span class="post-count">7分</span>
-	      </span>
-	    </span>
-	</div>
-
-	      
-	      <!-- 添加完成 -->
-
-          </header>
         
         <div class="entry-content">
           <h1 id="IDEA中从零开始创建Vue项目"><a href="#IDEA中从零开始创建Vue项目" class="headerlink" title="IDEA中从零开始创建Vue项目"></a>IDEA中从零开始创建Vue项目</h1><p>好久没学技术了，今天开始学习Vue,我用的是IDEA，所以第一步就是如何在IDEA中创建Vue项目。在此期间，也是遇到了不少的坑，好在找到了许多优质的文章，所以在这里整理、记录，并分享给大家。</p>
@@ -466,17 +458,12 @@
 <blockquote>
 <p>打开cmd 输入下面的命令查看是否成功安装<br> <code>node -v</code><br> <code>npm -v</code></p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-f81a20f73d8d41cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/255" alt="img"></p>
 <h2 id="三、搭建项目"><a href="#三、搭建项目" class="headerlink" title="三、搭建项目"></a>三、搭建项目</h2><h3 id="1-打开idea-新建项目"><a href="#1-打开idea-新建项目" class="headerlink" title="1  .打开idea,新建项目"></a>1  .打开idea,新建项目</h3><p> <strong>Create New Project &gt; Static Web&gt;填写project name和选择保存的工作空间&gt;Finish</strong></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-286b7f799a1c41af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/884" alt="img"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-2afa051ef6a82b5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/884" alt="img"></p>
 <p>​                                      </p>
 <h3 id="2-安装vue脚手架工具"><a href="#2-安装vue脚手架工具" class="headerlink" title="2.安装vue脚手架工具"></a>2.安装vue脚手架工具</h3><ul>
-<li><p>首先安装npm的淘宝镜像(下载速度比较快)，打开idea的Terminal</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-0dfcff2e76796d0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/478" alt="img"></p>
-<p>输入以下的命令</p>
-</li>
+<li>首先安装npm的淘宝镜像(下载速度比较快)，打开idea的Terminal</li>
 </ul>
+<p>  输入以下的命令</p>
 <blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 </blockquote>
@@ -495,7 +482,6 @@
 <p>我又找到了以下解决方案：</p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanchaoyong/p/12612402.html">解决方案来源</a></p>
 <p>将shell path地址换成如下。C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe，重启idea。再试试。</p>
-<p><img src="https://img2020.cnblogs.com/blog/897885/202004/897885-20200401142529875-1376129187.png" alt="img"></p>
 <p>按照这个方法，再可以在terminal中执行npm命令了！</p>
 <p>我们继续执行这个：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
@@ -546,23 +532,20 @@
 <p>（运行程序+编译器:推荐给大多数用户）</p>
 <p><strong>· Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specificHTML) are ONLY allowed in .vue files - render functions are required elsewhere</strong></p>
 <p>（仅运行程序: 比上面那种模式轻大约 6KB min+gzip，但是 template (或任何特定于vue的html)只允许在.vue文件中使用——其他地方用需要 render 函数）</p>
-<h4 id="ps2"><a href="#ps2" class="headerlink" title="ps2."></a>ps2.</h4><p>![Image 1](Image 1.png)</p>
-<p>对于这样有选项的，可以用 下 方向键选择，选中后回车即可！（不要像我傻傻 的不知所措）</p>
+<h4 id="ps2"><a href="#ps2" class="headerlink" title="ps2."></a>ps2.</h4><p>对于这样有选项的，可以用 下 方向键选择，选中后回车即可！（不要像我傻傻 的不知所措）</p>
 <p>继续！！！</p>
 <ul>
 <li><p>初始化完成后。依次在Terminal输入图片内的黄色文字</p>
 </li>
 <li><p>demo为你前面新建的项目名；第二句括号中的不用输，我就是傻傻的输入了。。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-a002ea0d4adaa74f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/786" alt="img"></p>
-</li>
-<li><p>完成后，会提示在哪个端口可以访问，此处现在是8080</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-b5b8d73f5bbd5edd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/646" alt="img"></p>
-</li>
-<li><p>打开浏览器输入：localhost:8080,出现以下画面，简单的demo就搭建完成了 。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/11582167-0b744acd68c8beb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1132" alt="img"></p>
 </li>
 </ul>
-<p>![Image 2](Image 2.png)</p>
+<ul>
+<li>完成后，会提示在哪个端口可以访问，此处现在是8080</li>
+</ul>
+<ul>
+<li>打开浏览器输入：localhost:8080,出现以下画面，简单的demo就搭建完成了 。</li>
+</ul>
 <p>此时，我们就可以新建Vue Component了！</p>
 <p>创建成功！回去继续上狂神的Vue去了…</p>
 <p>本文的主要步骤参考自：</p>
@@ -632,16 +615,16 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <a target="_blank" rel="noopener" href="https://github.com/InitiativeYu/InitiativeYu.github.io" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/InitiativeYu/cdn/img/(1).jpg.webp" itemprop="image" alt="InitiativeYu" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="" itemprop="url" rel="author"></a>
+            <a target="_blank" href="https://github.com/InitiativeYu/InitiativeYu.github.io" itemprop="url" rel="author noopener">InitiativeYu</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i></p>
+        <p><i class="iconfont icon-write"></i>记录点滴,成就美好。</p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->
