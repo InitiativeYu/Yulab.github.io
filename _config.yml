@@ -4,12 +4,12 @@
 
 # Site
 
-title: Hexo
-subtitle: ''
-description:  Test description
+title: INITIATIVEYU
+subtitle: 
+description:  热爱技术，享受生活！
 keywords:
-author: John Doe
-language: en
+author: InitiativeYu
+language: zh-en
 timezone: ''
 
 # URL
@@ -111,7 +111,36 @@ feed:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
+deploy: 
   type: git
-  repo: https://github.com/InitiativeYu/InitiativeYu.github.io.git
+  repository: https://github.com/InitiativeYu/InitiativeYu.github.io.git
   branch: master 
+
+plugins:
+- hexo-generator-feed
+
+# Markdown-it config
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
+# 配置 Rss 订阅
+Plugins: 
+- hexo-generate-feed

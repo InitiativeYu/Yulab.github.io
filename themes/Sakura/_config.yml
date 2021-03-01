@@ -4,10 +4,12 @@ siteName: Yu
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: https://tse4-mm.cn.bing.net/th/id/OIP.a5ZIdWQEMi9DXG5ny0ZjpwHaIX?w=152&h=180&c=7&o=5&dpr=1.1&pid=1.7
-url: https://sakura.hojun.cn
+url: https://www.yulab.top
 description: Live your life with passion! With some drive!
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn: https://cdn.jsdelivr.net/gh/InitiativeYu/CDN@1.0
 pjax: 1
+tags: tags
+categories: /categories
 # 1开启
 mathjax: 0
 
@@ -19,15 +21,12 @@ menus:
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
-    随想: {path: /categories/随想/, fa: fa-commenting-o },
     转载: {path: /categories/转载/, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
-    图集: {path: /tags/图集/, fa: fa-photo }
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
@@ -46,14 +45,13 @@ homePageSortType: -1
 # Home page article shown number)
 homeArticleShown: 10
 # 背景图片 更好的修改
-bg:
--https://ftp.bmp.ovh/imgs/2021/01/262f9c491aea229c.jpg
--https://ftp.bmp.ovh/imgs/2021/01/4159f17dadc75709.jpg
--https://ftp.bmp.ovh/imgs/2021/01/2d4006d59742ae13.jpg
--https://ftp.bmp.ovh/imgs/2021/01/f94ab126b9cf9650.jpg
--https://ftp.bmp.ovh/imgs/2021/01/a55c958f75f9a5dc.jpg
--https://ftp.bmp.ovh/imgs/2021/01/f2839b90300ce3d6.jpg
-
+bg: 
+ - https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(0).jpg
+ - https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(1).jpg
+ - https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(2).jpg
+ - https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(3).jpg
+ - https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(4).jpg
+ - https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(5).jpg
 
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
@@ -68,10 +66,10 @@ startdash:
 
 
 # your site build time or founded date
-siteBuildingTime: 12/21/2020
+siteBuildingTime: 02/21/2021
 
 #social  url, img PC端配置
-social:
+social: 
   github: {url: https://github.com/InitiativeYu/InitiativeYu.github.io, img: /img/social/github.png}
   sina: {url: https://www.weibo.com/5521699091/profile?profile_ftype=1&is_all=1#_0, img: /img/social/sina.png}
   wangyiyun: {url: https://music.163.com/#/user/home?id=1302241470, img: /img/social/wangyiyun.png}
@@ -94,6 +92,11 @@ movies:
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: Unbroken.mp4
 
+# 背景音乐
+bg_music: https://m10.music.126.net/20200602143725/fa04d41ad48c7ee8acd87321007b190c/ymusic/a7c0/b207/4ec9/da0ca2f21a36146d14548b8c99f819d0.mp3
+
+
+
 aplayer: 
   id: 2660651585
   server: netease
@@ -107,9 +110,17 @@ aplayer:
   mutex: true
 
 # Valine
-new Valine({
-            el: '#vcomments',
-            appId: 'UvAo8zWpSI8hmiTPeVBJXYjo-gzGzoHsz',
-            appKey: 'kbNGcLsJMdI0NJidLe96Yb9w'
-        })
+valine: true
+v_appId: UvAo8zWpSI8hmiTPeVBJXYjo-gzGzoHsz
+v_appKey: kbNGcLsJMdI0NJidLe96Yb9w
 
+# 简易信息聚合,站点共享
+rss: /atom.xml
+
+# 是否开启字数统计
+#不需要使用，直接设置值为false，或注释掉
+word_count: true
+
+# Online contact ##在线聊天
+daovoice: true
+daovoice_app_id: 891f266c ##这里替换成你DaoVoice上的appid

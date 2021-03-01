@@ -1,10 +1,15 @@
 ---
-title: IDEA中从零开始创建Vue项目
-tag: VUE
-categories: 技术
-comment: true
-description: 开始学习VUE的不二之选~
-photos: https://tse4-mm.cn.bing.net/th/id/OIP.Atex16Gx1AOUIctsj8MHJwHaFj?pid=Api&rs=1
+title: IDEA下建VUE项目
+date: 
+author: InitiativeYu
+authorLink: https://github.com/InitiativeYu/InitiativeYu.github.io
+avatar: https://cdn.jsdelivr.net/gh/InitiativeYu/cdn/img/(1).jpg.webp
+authorAbout: 记录点滴,成就美好。
+tags: 
+  - 悦读
+categories: 
+  - 技术
+photos: https://cdn.jsdelivr.net/gh/InitiativeYu/cdn/img/(4).jpg.webp
 ---
 # IDEA中从零开始创建Vue项目
 
@@ -48,7 +53,7 @@ photos: https://tse4-mm.cn.bing.net/th/id/OIP.Atex16Gx1AOUIctsj8MHJwHaFj?pid=Api
 >  `node -v`
 >  `npm -v`
 
-![img](https://upload-images.jianshu.io/upload_images/11582167-f81a20f73d8d41cf.png?imageMogr2/auto-orient/strip|imageView2/2/w/255)
+
 
 
 
@@ -58,11 +63,7 @@ photos: https://tse4-mm.cn.bing.net/th/id/OIP.Atex16Gx1AOUIctsj8MHJwHaFj?pid=Api
 
  **Create New Project > Static Web>填写project name和选择保存的工作空间>Finish**
 
-![img](https://upload-images.jianshu.io/upload_images/11582167-286b7f799a1c41af.png?imageMogr2/auto-orient/strip|imageView2/2/w/884)
 
-
-
-![img](https://upload-images.jianshu.io/upload_images/11582167-2afa051ef6a82b5a.png?imageMogr2/auto-orient/strip|imageView2/2/w/884)
 
 ​                                      
 
@@ -70,7 +71,7 @@ photos: https://tse4-mm.cn.bing.net/th/id/OIP.Atex16Gx1AOUIctsj8MHJwHaFj?pid=Api
 
 - 首先安装npm的淘宝镜像(下载速度比较快)，打开idea的Terminal
 
-  ![img](https://upload-images.jianshu.io/upload_images/11582167-0dfcff2e76796d0f.png?imageMogr2/auto-orient/strip|imageView2/2/w/478)
+
 
   输入以下的命令
 
@@ -120,7 +121,7 @@ tips. (这是我添加的自己遇到的情况)
 
 
 
-![img](https://img2020.cnblogs.com/blog/897885/202004/897885-20200401142529875-1376129187.png)
+
 
 按照这个方法，再可以在terminal中执行npm命令了！
 
@@ -230,7 +231,7 @@ npm init -y
 
 #### ps2.
 
-![Image 1](Image 1.png)
+
 
 对于这样有选项的，可以用 下 方向键选择，选中后回车即可！（不要像我傻傻 的不知所措）
 
@@ -242,17 +243,17 @@ npm init -y
 
 - demo为你前面新建的项目名；第二句括号中的不用输，我就是傻傻的输入了。。
 
-  ![img](https://upload-images.jianshu.io/upload_images/11582167-a002ea0d4adaa74f.png?imageMogr2/auto-orient/strip|imageView2/2/w/786)
+
 
 - 完成后，会提示在哪个端口可以访问，此处现在是8080
 
-  ![img](https://upload-images.jianshu.io/upload_images/11582167-b5b8d73f5bbd5edd.png?imageMogr2/auto-orient/strip|imageView2/2/w/646)
+
 
 - 打开浏览器输入：localhost:8080,出现以下画面，简单的demo就搭建完成了 。
 
-  ![img](https://upload-images.jianshu.io/upload_images/11582167-0b744acd68c8beb1.png?imageMogr2/auto-orient/strip|imageView2/2/w/1132)
 
-![Image 2](Image 2.png)
+
+
 
 此时，我们就可以新建Vue Component了！
 
