@@ -4,7 +4,7 @@ date: 2021-2-19 12:15:32
 keywords: 关于
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(4).jpg.webp
+photos: https://cdn.jsdelivr.net/gh/InitiativeYu/CDN/img/(4).jpg
 ---
 {% raw %}
 <!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
