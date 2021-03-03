@@ -819,7 +819,9 @@ function grin (tag, type, before, after) {
 function add_copyright () {
   document.body.addEventListener('copy', function (e) {
     if (!mashiro_global.is_user_logged_in && window.getSelection().toString().length > 30) {
-      setClipboardText(e)
+       if(mashiro_option.copyright_enable.indexOf("false")!= -1 && window.getSelection().toString().length > mashiro_option.copyright_minCharNumber){//判断是否允许复制，false不允许，添加复制作者信息
+        setClipboardText(e)
+      }
     }
   })
 
