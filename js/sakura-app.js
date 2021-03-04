@@ -821,7 +821,7 @@ function add_copyright () {
     if (!mashiro_global.is_user_logged_in && window.getSelection().toString().length > 30) {
       setClipboardText(e)
     }
-  }
+  }）
 
   function setClipboardText (event) {
     event.preventDefault()
