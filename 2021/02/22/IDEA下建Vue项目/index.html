@@ -452,7 +452,7 @@
 </ul>
 <p>  输入以下的命令</p>
 <blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">npm i -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </blockquote>
 <h4 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h4><p>tips. (这是我添加的自己遇到的情况)</p>
 <p><strong>我们在使用npm安装依赖的时候有时候会出现“’npm’ 不是内部或外部命令，也不是可运行的程序”的提示，一般都是因为环境变量没配好</strong></p>
@@ -471,7 +471,7 @@
 <p>将shell path地址换成如下。C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe，重启idea。再试试。</p>
 <p>按照这个方法，再可以在terminal中执行npm命令了！</p>
 <p>我们继续执行这个：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">npm i -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -479,11 +479,27 @@
 <li>等待下载完成以后，继续安装vue的脚手架工具，在Terminal内继续输入以下命令</li>
 </ul>
 <blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i -g vue-cli&#96;</span><br><span class="line"> 测试是否安装成功：</span><br><span class="line"> &#96;vue -V</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">npm i -g vue-cli&#96;
+ 测试是否安装成功：
+ &#96;vue -V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </blockquote>
 <h4 id="踩坑2"><a href="#踩坑2" class="headerlink" title="踩坑2"></a>踩坑2</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32068809/article/details/79512709">解决方案来源</a></p>
 <p>我们需要使用npm安装vue，在执行了上面的命令时，报错如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lxz&gt;npm uninstall vueWcsp</span><br><span class="line"></span><br><span class="line">npm WARN saveError ENOENT: no such file <span class="keyword">or</span> directory, <span class="built_in">open</span> <span class="string">&#x27;C:\Users\lxz\package.json&#x27;</span></span><br><span class="line"></span><br><span class="line">npm WARN enoent ENOENT: no such file <span class="keyword">or</span> directory, <span class="built_in">open</span> <span class="string">&#x27;C:\Users\lxz\package.json&#x27;</span></span><br><span class="line"></span><br><span class="line">npm WARN lxz No description</span><br><span class="line"></span><br><span class="line">npm WARN lxz No repository field.</span><br><span class="line"></span><br><span class="line">npm WARN lxz No README data</span><br><span class="line"></span><br><span class="line">npm WARN lxz No license field.</span><br><span class="line"></span><br><span class="line">up to date <span class="keyword">in</span> <span class="number">0.765</span>s</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">C:\Users\lxz&gt;npm uninstall vueWcsp
+
+npm WARN saveError ENOENT: no such file or directory, open &#39;C:\Users\lxz\package.json&#39;
+
+npm WARN enoent ENOENT: no such file or directory, open &#39;C:\Users\lxz\package.json&#39;
+
+npm WARN lxz No description
+
+npm WARN lxz No repository field.
+
+npm WARN lxz No README data
+
+npm WARN lxz No license field.
+
+up to date in 0.765s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -492,12 +508,12 @@
 <p>展示项目所依赖的npm包<br>允许你指定一个包的版本[范围]<br>让你建立起稳定，意味着你可以更好的与其他开发者共享</p>
 </blockquote>
 <p>此刻我们需要执行命令：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">npm init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
 <p>创建package.json文件，系统会提示相关配置，也可以使用命令：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html">npm init -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -507,7 +523,7 @@
 <li>脚手架安装完成后，初始化包结构,继续输入</li>
 </ul>
 <blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack demo</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">vue init webpack demo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </blockquote>
 <ul>
 <li>demo为你前面新建的项目名。初始化会进行设置。可参考此处设置。</li>
@@ -641,7 +657,7 @@
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -653,10 +669,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            // PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
