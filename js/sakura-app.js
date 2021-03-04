@@ -819,8 +819,7 @@ function grin (tag, type, before, after) {
 function add_copyright () {
   document.body.addEventListener('copy', function (e) {
     if (!mashiro_global.is_user_logged_in && window.getSelection().toString().length > 30) {
-        setClipboardText(e)
-      }
+      setClipboardText(e)
     }
   })
 
